@@ -8,16 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="src/CSS/reset.css">
 
     <link rel="stylesheet" href="src/CSS/style.css">
     <title>Meu Portifólio</title>
 </head>
 <body>
+
+    <script src="script.js"></script>
+
     <main class="cartao">
         <div class="minhas-informacoes">
-            <img src="src/image/foto-perfil.jpg" alt="foto de perfil">
+            <img src="src/image/foto-de-perfil.jpg" alt="foto de perfil">
 
             
             <h1 class="nome">
@@ -45,10 +47,10 @@
                 <div class="informacao selecionado">
                     <h3 class="sub-titulo">Sobre</h3>
 
-                    <div>
+                    <div id="descricao">
                         <p class="descricao">
-                           Olá! meu nome é Allan Souza Cordeiro, seja bem-vindo(a)!<br>
-                           Sou uma pessoa apaixonada pela programação desde que eu tinha 18 anos. Sempre comecei a colocar esse seonho em prática estudando <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Gosto muito de café (até demais), e meus principais hobbies são jogar MMO, RPG, ver animes e séries.
+                           <script>window.document.write(`${saudacao}!meu nome é Allan Souza Cordeiro, seja bem-vindo(a)!<br>
+                            Tenho ${minha_idade} anos, sou um amante da programação e facinado em estudar coisas novas. Atuamente estou estudando <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> e pretendo me tornar um desenvolvedor web um dia. Além de programar, gosto também de games, filmes e livros.`)</script> 
                         </p>
                     </div>
 
