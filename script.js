@@ -10,24 +10,17 @@ saudacao = 'Bom dia'
 }
 
 
- var idade = function(dia_aniversario, mes_aniversario,ano_aniversario) {
-    var d = new Date,
-        ano_atual = d.getFullYear(),
-        mes_atual = d.getMonth() + 1,
-        dia_atual = d.getDate(),
+var idade = function (dia,mes,ano){
+    var dia_atual = new Date().getDate()
+    var mes_atual = new Date().getMonth()+1
+    var ano_atual = new Date().getFullYear()
 
-        ano_aniversario = +ano_aniversario,
-        mes_aniversario = +mes_aniversario,
-        dia_aniversario = +dia_aniversario,
-
-        quantos_anos = ano_atual - ano_aniversario;
-
-    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
-        quantos_anos--;
+    if(mes_atual <= mes & dia_atual < dia){
+        return ano_atual - ano - 1
+    }else{
+        return ano_atual-ano
     }
-
-    return quantos_anos < 0 ? 0 : quantos_anos;
 }
 
-var minha_idade = idade(20,07,2003)
+minha_idade = idade(20,07,2003)
 
